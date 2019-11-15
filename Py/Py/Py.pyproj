@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>727ddd1d-d248-487a-8926-ce73698489d0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Py.py</StartupFile>
+    <StartupFile>module1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Py.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
