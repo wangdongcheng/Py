@@ -59,7 +59,6 @@ if __name__ == '__main__':
 
     '''方法2（通过选中范围的中间值颜色数组打马赛克）'''
     #(depts, (start-y, end-y), (start-x, end-x)
-    img2  = method2(img,8, (138,224,136,227), (275,451,770,949))
+    img2 = method2(img,8, (138,224,136,227), (275,451,770,949))
     img2.show()
     img2.save("C:\\Users\\Thinkpad-65\\Desktop\\888_.jpg")
-    
