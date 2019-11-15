@@ -55,10 +55,10 @@ if __name__ == '__main__':
     #method1(20, (200, 300), (140, 240))
 
     #im1 = np.array(Image.open("d:\\My Pictures\\screenshot\\pic3639.png"))
-    img = np.array(Image.open("C:\\Users\\Thinkpad-65\\Desktop\\888.jpg"))
+    img = np.array(Image.open("d:\\My Documents\\BaiduCloud\\SICOD\\GitHub\\Py\\test666\\888.jpg"))
 
     '''方法2（通过选中范围的中间值颜色数组打马赛克）'''
     #(depts, (start-y, end-y), (start-x, end-x)
     img2 = method2(img,8, (138,224,136,227), (275,451,770,949))
     img2.show()
-    img2.save("C:\\Users\\Thinkpad-65\\Desktop\\888_.jpg")
+    img2.save("d:\\My Documents\\BaiduCloud\\SICOD\\GitHub\\Py\\test666\\888_.jpg")

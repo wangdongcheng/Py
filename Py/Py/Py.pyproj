@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>727ddd1d-d248-487a-8926-ce73698489d0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>img2pdf_2.py</StartupFile>
+    <StartupFile>Py.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
