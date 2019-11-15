@@ -1,5 +1,6 @@
 import os
 import sys
+
 for a in range(4,23):
     path = 'd:/BaiduYunDownload/[艾奥里亚中文网]圣斗士星矢原版漫画全集/txt' + str(a).zfill(2) + '/'
     filenames = os.listdir(path)
