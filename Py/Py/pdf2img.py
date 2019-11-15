@@ -16,7 +16,7 @@ def rightinput(desc):
             pass
     return intnum
 
-pdffile = glob.glob("test66/*.pdf")[0]
+pdffile = glob.glob("test666/*.pdf")[0]
 doc = fitz.open(pdffile)
 
 
