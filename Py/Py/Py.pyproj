@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>727ddd1d-d248-487a-8926-ce73698489d0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>img2pdf.py</StartupFile>
+    <StartupFile>img2pdf_2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,7 +24,10 @@
     <Compile Include="BatchRename.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="img2pdf.py">
+    <Compile Include="img2pdf_1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="img2pdf_2.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="pdf2img.py" />
