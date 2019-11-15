@@ -2,9 +2,9 @@
 
 import img2pdf
 
-pdfpath = 'd:\\My Documents\\BaiduCloud\\SICOD\\GitHub\\Py\\test666\\out_2.pdf'
-img1    = 'd:\\My Documents\\BaiduCloud\\SICOD\\GitHub\\Py\\test666\\Frontpage_1.png'
-img2    = 'd:\\My Documents\\BaiduCloud\\SICOD\\GitHub\\Py\\test666\\Frontpage_2.png'
+pdfpath = '\\test666\\out_2.pdf'
+img1    = '\\test666\\Frontpage_1.png'
+img2    = '\\test666\\Frontpage_2.png'
 # multiple inputs (variant 1)
 with open(pdfpath,"wb") as f:
 	f.write(img2pdf.convert(img1, img2))
