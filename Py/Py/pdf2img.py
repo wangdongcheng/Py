@@ -26,7 +26,7 @@ if flag == 1:
     totaling = doc.pageCount
 else:
     start = rightinput('输入起始页面：') - 1
-    totaling = rightinput('输入结束页面：')
+    totaling = rightinput('输入结束页面：') 
 
 for pg in range(start, totaling):
     page = doc[pg]
