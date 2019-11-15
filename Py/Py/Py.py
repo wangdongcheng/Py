@@ -30,7 +30,7 @@ def method1(depts, start, end):
 
 def method2(depts, start, end):
     '''
-    :param depts: 马瑟克块元素大小
+    :param depts: 马瑟克块元素大小 
     :param start: 马赛克横坐标起点元组
     :param end: 马赛克纵坐标起始点元组
     :return:
