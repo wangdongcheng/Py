@@ -16,7 +16,7 @@ def rightinput(desc):
             pass
     return intnum
 
-pdffile = glob.glob("test666/*.pdf")[0]
+pdffile = glob.glob("test666/a819840_33371.pdf")[0]
 doc = fitz.open(pdffile)
 
 
@@ -30,7 +30,7 @@ else:
 
 for pg in range(start, totaling):
     page = doc[pg]
-    zoom = int(100)
+    zoom = int(200)
     rotate = int(0)
     trans = fitz.Matrix(zoom / 100.0, zoom / 100.0).preRotate(rotate)
     pm = page.getPixmap(matrix=trans, alpha=False)

@@ -20,7 +20,7 @@ def method1(depts, start, end):
     :param end: 马赛克纵坐标起始点元组
     :return:
     '''
-    im1 = np.array(Image.open("C:\\Users\\Thinkpad-65\\Desktop\\888.jpg"))
+    im1 = np.array(Image.open("test666/888.jpg"))
     for i in range(start[0], start[1], depts):
         for j in range(end[0], end[1], depts):
             im1[i:i + depts, j:j + depts] = getRandArr()
