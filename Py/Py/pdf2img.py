@@ -2,6 +2,7 @@ import fitz
 import glob
 import os
 import sys
+import re
 
 def rightinput(desc):
     flag=True
@@ -16,7 +17,7 @@ def rightinput(desc):
             pass
     return intnum
 
-pdffile = glob.glob("test666/a819840_33371.pdf")[0]
+pdffile = glob.glob("test666/a9ba298_36471.pdf")[0]
 doc = fitz.open(pdffile)
 
 
@@ -35,4 +36,5 @@ for pg in range(start, totaling):
     trans = fitz.Matrix(zoom / 100.0, zoom / 100.0).preRotate(rotate)
     pm = page.getPixmap(matrix=trans, alpha=False)
     # pm.writePNG('d:/My Documents/BaiduCloud/SICOD/GitHub/Py/test/%s.png' % str(pg+1))
-    pm.writePNG(pdffile.title().replace('.Pdf','_')+str(pg+1)+'.png')
+    imgname = re.sub('.[Pp][Dd][Ff]','_',pdffile)
+    pm.writePNG(imgname+str(pg+1)+'.png')
