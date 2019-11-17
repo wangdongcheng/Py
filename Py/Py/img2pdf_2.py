@@ -11,9 +11,9 @@ with open(pdfpath,"wb") as f:
 
 #import img2pdf
 
-## opening from filename
-#with open("name.pdf","wb") as f:
-#	f.write(img2pdf.convert('test.jpg'))
+# opening from filename
+with open("test666/eng_.pdf","wb") as f:
+	f.write(img2pdf.convert('test666/eng_1.png'))
 
 ## opening from file handle
 #with open("name.pdf","wb") as f1, open("test.jpg") as f2:
