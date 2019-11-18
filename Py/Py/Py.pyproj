@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>727ddd1d-d248-487a-8926-ce73698489d0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>pdf2img.py</StartupFile>
+    <StartupFile>pdf_cover.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -31,6 +31,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="pdf2img.py" />
+    <Compile Include="pdf_cover.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Py.py" />
     <Compile Include="read_coordinate.py">
       <SubType>Code</SubType>
