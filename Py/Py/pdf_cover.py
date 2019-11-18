@@ -1,5 +1,4 @@
 import os
-import sys
 import glob
 import fitz
 import re
@@ -13,7 +12,6 @@ def get_pdf_files(pdf_path):
     if pdf_path[len(pdf_path) - 1] != '\\':
         pdf_path = pdf_path + '\\'
     pdf_files = glob.glob(pdf_path+'*.pdf')
-   
     return pdf_files
 
 # =========================================================
@@ -24,7 +22,7 @@ def pdf_to_imgs(pdf_files):
     zoom = 200
     rotate = 0
     pdf_imgs = []
-    pdf_img_path,dummy = os.path.split(pdf_files[0])
+    pdf_img_path, dummy = os.path.split(pdf_files[0])
     pdf_img_path = pdf_img_path + '\\img\\'
 
     folder_exist = os.path.exists(pdf_img_path)
@@ -33,17 +31,16 @@ def pdf_to_imgs(pdf_files):
 
     for pdf_file in pdf_files:
         pdf_doc = fitz.open(pdf_file)
-        pdf_page = pdf_doc[0]
-        pdf_trans = fitz.Matrix(zoom / 100.0, zoom / 100.0).preRotate(rotate)
-        pix_map = pdf_page.getPixmap(matrix = pdf_trans, alpha = False)
-
-        dummy,pdf_file_name = os.path.split(pdf_file)
-        pdf_img_full_path = pdf_img_path + re.sub('.[Pp][Dd][Ff]','_',pdf_file_name)+'.png'
-        pdf_imgs_full_path.append(pdf_img_full_path)
-        pix_map.writePNG(pdf_img_full_path)
-        pdf_img = numpy.array(Image.open(pdf_img_full_path))
-        pdf_imgs.append(pdf_img)
-    
+        dummy, pdf_file_name = os.path.split(pdf_file)
+        for i in range(0, pdf_doc.pageCount):
+            pdf_page = pdf_doc[i]
+            pdf_trans = fitz.Matrix(zoom / 100.0, zoom / 100.0).preRotate(rotate)
+            pix_map = pdf_page.getPixmap(matrix=pdf_trans, alpha=False)
+            pdf_img_full_path = pdf_img_path + re.sub('.[Pp][Dd][Ff]', '_', pdf_file_name) + str(i).zfill(2) +'.png'
+            pdf_imgs_full_path.append(pdf_img_full_path)
+            pix_map.writePNG(pdf_img_full_path)
+            pdf_img = numpy.array(Image.open(pdf_img_full_path))
+            pdf_imgs.append(pdf_img)
     return pdf_imgs,pdf_imgs_full_path
 
 # =========================================================
@@ -59,7 +56,7 @@ def cover_method(pdf_img, start_x, start_y, end_x, end_y, pdf_img_full_path):
 # =========================================================
 # proceed to add black block cover by given coordinates
 # =========================================================
-def img_cover(pdf_imgs,pdf_imgs_full_path):
+def img_cover(pdf_imgs, pdf_imgs_full_path):
     coordinate_config = open('coordinate.txt', 'r')
     start_x = []
     start_y = []
@@ -72,7 +69,6 @@ def img_cover(pdf_imgs,pdf_imgs_full_path):
         start_y.append(points[1])
         end_x.append(points[2])
         end_y.append(points[3])
-        
     for i in range(0, len(pdf_imgs)):
         for j in range(0, len(start_x)):
             cover_method(pdf_imgs[i],start_x[j],
