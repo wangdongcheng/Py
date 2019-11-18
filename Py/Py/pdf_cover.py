@@ -52,7 +52,7 @@ def pdf_to_imgs(pdf_files):
 def cover_method(pdf_img, start_x, start_y, end_x, end_y, pdf_img_full_path):
     for x in range(int(start_x), int(end_x) + 1):
         for y in range(int(start_y), int(end_y) + 1):
-            pdf_img[x, y] = 0
+            pdf_img[y, x] = 0
     pdf_img = Image.fromarray(pdf_img.astype("uint8"))
     pdf_img.save(pdf_img_full_path)
 
