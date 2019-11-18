@@ -75,7 +75,7 @@ if __name__ == '__main__':
     pdf_imgs = pdf_imgs_full_path = []
     pdf_path = input('Please input the PDF folder path:')
     if pdf_path == '':
-        pdf_path = 'test666/' # default pdf path
+        pdf_path = 'test666/' # default PDF path
         print('PDF path is:', pdf_path)
     pdf_files = get_pdf_files(pdf_path)
     pdf_imgs,pdf_imgs_full_path = pdf_to_imgs(pdf_files)
