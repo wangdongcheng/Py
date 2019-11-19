@@ -21,21 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="BatchRename.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="img2pdf_1.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="img2pdf_2.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="pdf2img.py" />
     <Compile Include="pdf_cover.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Py.py" />
-    <Compile Include="read_coordinate.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
