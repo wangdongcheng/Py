@@ -4,15 +4,16 @@ import fitz
 import re
 import numpy
 from PIL import Image
+import img2pdf
 
 # =========================================================
 # get PDF files from given path
 # =========================================================
 def get_pdf_files(pdf_path):
-    if pdf_path[len(pdf_path) - 1] != '\\':
-        pdf_path = pdf_path + '\\'
+    if pdf_path[len(pdf_path) - 1] != '/':
+        pdf_path = pdf_path + '/'
     pdf_files = glob.glob(pdf_path+'*.pdf')
-    return pdf_files
+    return pdf_path, pdf_files
 
 # =========================================================
 # convert PDF to images
@@ -23,10 +24,9 @@ def pdf_to_imgs(pdf_files):
     rotate = 0
     pdf_imgs = []
     pdf_img_path, dummy = os.path.split(pdf_files[0])
-    pdf_img_path = pdf_img_path + '\\img\\'
+    pdf_img_path = pdf_img_path + '/img/'
 
-    folder_exist = os.path.exists(pdf_img_path)
-    if not folder_exist:
+    if not os.path.exists(pdf_img_path):
         os.makedirs(pdf_img_path)
 
     for pdf_file in pdf_files:
@@ -41,14 +41,14 @@ def pdf_to_imgs(pdf_files):
             pix_map.writePNG(pdf_img_full_path)
             pdf_img = numpy.array(Image.open(pdf_img_full_path))
             pdf_imgs.append(pdf_img)
-    return pdf_imgs,pdf_imgs_full_path
+    return pdf_imgs, pdf_imgs_full_path
 
 # =========================================================
 # add black block on the images
 # =========================================================
 def cover_method(pdf_img, start_x, start_y, end_x, end_y, pdf_img_full_path):
-    for x in range(int(start_x), int(end_x) + 1):
-        for y in range(int(start_y), int(end_y) + 1):
+    for x in range(int(start_x), int(end_x)+1):
+        for y in range(int(start_y), int(end_y)+1):
             pdf_img[y, x] = 0
     pdf_img = Image.fromarray(pdf_img.astype("uint8"))
     pdf_img.save(pdf_img_full_path)
@@ -77,6 +77,21 @@ def img_cover(pdf_imgs, pdf_imgs_full_path):
                                      end_y[j],
                                      pdf_imgs_full_path[i])
 
+def img_to_pdf(pdf_path, pdf_files):
+    if pdf_path[len(pdf_path) - 1] != '/':
+        pdf_path = pdf_path + '/'
+    output_path = pdf_path + 'output/'
+    if not os.path.exists(output_path):
+        os.makedirs(output_path)
+    pdf_img_path = pdf_path + 'img/'
+    for pdf_file in pdf_files:
+        dummy, pdf_fullname = os.path.split(pdf_file)
+        output_fullpath = output_path + pdf_fullname
+        pdf_filename = pdf_fullname.split('.')[0]
+        pdf_png_files = glob.glob(pdf_img_path + pdf_filename + '*.png')
+        with open(output_fullpath,"wb") as f:
+            f.write(img2pdf.convert(pdf_png_files))
+     
 # =========================================================
 # Main
 # =========================================================
@@ -86,6 +101,7 @@ if __name__ == '__main__':
     if pdf_path == '':
         pdf_path = 'test666/' # default PDF path
         print('PDF path is:', pdf_path)
-    pdf_files = get_pdf_files(pdf_path)
+    pdf_path, pdf_files = get_pdf_files(pdf_path)
     pdf_imgs,pdf_imgs_full_path = pdf_to_imgs(pdf_files)
     img_cover(pdf_imgs,pdf_imgs_full_path)
+    img_to_pdf(pdf_path,pdf_files)
