@@ -1,0 +1,235 @@
+('D:\\My Documents\\BaiduCloud\\SICOD\\GitHub\\Py\\Py\\Py\\dist\\pdf_cover.exe',
+ True,
+ False,
+ False,
+ None,
+ None,
+ False,
+ False,
+ '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1"><assemblyIdentity name="pdf_cover" processorArchitecture="amd64" type="win32" version="1.0.0.0"/><dependency><dependentAssembly><assemblyIdentity language="*" name="Microsoft.Windows.Common-Controls" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" type="win32" version="6.0.0.0"/><compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1"/></dependentAssembly></dependency><compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1"><application><supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"/><supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/><supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/><supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/><supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/></application></compatibility></assembly>',
+ True,
+ 'pdf_cover.pkg',
+ [('PYZ-00.pyz',
+   'D:\\My '
+   'Documents\\BaiduCloud\\SICOD\\GitHub\\Py\\Py\\Py\\build\\pdf_cover\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\struct.pyo',
+   'PYMODULE'),
+  ('pyimod01_os_path',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\loader\\pyimod01_os_path.pyc',
+   'PYMODULE'),
+  ('pyimod02_archive',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\loader\\pyimod02_archive.pyc',
+   'PYMODULE'),
+  ('pyimod03_importers',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\loader\\pyimod03_importers.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgres',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_pkgres.py',
+   'PYSOURCE'),
+  ('pdf_cover',
+   'D:\\My Documents\\BaiduCloud\\SICOD\\GitHub\\Py\\Py\\Py\\pdf_cover.py',
+   'PYSOURCE'),
+  ('VCRUNTIME140.dll',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('python36.dll',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\python36.dll',
+   'BINARY'),
+  ('msvcp140.dll',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\extra-dll\\msvcp140.dll',
+   'BINARY'),
+  ('_ctypes',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('_multiprocessing',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('_decimal',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_ssl',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('unicodedata',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('pyexpat',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('_hashlib',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('_bz2',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('_lzma',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_socket',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('select',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('PIL._imagingtk',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PIL\\_imagingtk.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL._webp',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PIL\\_webp.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL._imaging',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PIL\\_imaging.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('_distutils_findvs',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\DLLs\\_distutils_findvs.pyd',
+   'EXTENSION'),
+  ('scipy._lib._fpumode',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\_lib\\_fpumode.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy._lib._ccallback_c',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\_lib\\_ccallback_c.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('scipy._lib.messagestream',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\scipy\\_lib\\messagestream.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.core._multiarray_umath',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\core\\_multiarray_umath.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.core._multiarray_tests',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\core\\_multiarray_tests.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.sfc64',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\sfc64.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.philox',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\philox.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.pcg64',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\pcg64.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.mt19937',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\mt19937.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.bit_generator',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\bit_generator.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.generator',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\generator.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.mtrand',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\mtrand.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.bounded_integers',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\bounded_integers.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.random.common',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\random\\common.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.fft._pocketfft_internal',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\fft\\_pocketfft_internal.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.linalg._umath_linalg',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\linalg\\_umath_linalg.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('numpy.linalg.lapack_lite',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\linalg\\lapack_lite.cp36-win_amd64.pyd',
+   'EXTENSION'),
+  ('fitz._fitz',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\fitz\\_fitz.pyd',
+   'EXTENSION'),
+  ('libopenblas.PYQHXLVVQ7VESDPUVUADXEVJOBGHJPAY.gfortran-win_amd64.dll',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\numpy\\.libs\\libopenblas.pyqhxlvvq7vesdpuvuadxevjobghjpay.gfortran-win_amd64.dll',
+   'BINARY'),
+  ('base_library.zip',
+   'D:\\My '
+   'Documents\\BaiduCloud\\SICOD\\GitHub\\Py\\Py\\Py\\build\\pdf_cover\\base_library.zip',
+   'DATA'),
+  ('lib2to3\\PatternGrammar3.6.6.final.0.pickle',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\lib2to3\\PatternGrammar3.6.6.final.0.pickle',
+   'DATA'),
+  ('lib2to3\\PatternGrammar.txt',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\lib2to3\\PatternGrammar.txt',
+   'DATA'),
+  ('Include\\pyconfig.h',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\Include\\pyconfig.h',
+   'DATA'),
+  ('lib2to3\\Grammar.txt',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\lib2to3\\Grammar.txt',
+   'DATA'),
+  ('lib2to3\\Grammar3.6.6.final.0.pickle',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\lib2to3\\Grammar3.6.6.final.0.pickle',
+   'DATA'),
+  ('lib2to3\\tests\\data\\README',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\lib2to3\\tests\\data\\README',
+   'DATA'),
+  ('pdf_cover.exe.manifest',
+   'D:\\My '
+   'Documents\\BaiduCloud\\SICOD\\GitHub\\Py\\Py\\Py\\build\\pdf_cover\\pdf_cover.exe.manifest',
+   'BINARY'),
+  ('pyi-windows-manifest-filename pdf_cover.exe.manifest', '', 'OPTION')],
+ [],
+ False,
+ False,
+ 1575020620,
+ [('run.exe',
+   'd:\\program files (x86)\\microsoft visual '
+   'studio\\shared\\python36_64\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
+   'EXECUTABLE')])
