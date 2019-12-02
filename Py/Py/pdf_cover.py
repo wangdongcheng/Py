@@ -24,7 +24,7 @@ def get_pdf_files(pdf_path):
 
 def pdf_to_imgs(pdf_files):
     pdf_imgs_full_path = []
-    ZOOM = 200
+    ZOOM = 200 # the same effect as 150% zoom-in in PDF viewer
     ROTATE = 0
     pdf_imgs = []
     pdf_img_path, dummy = os.path.split(pdf_files[0])
@@ -99,6 +99,7 @@ def img_to_pdf(pdf_path, pdf_files):
         output_fullpath = output_path + pdf_fullname
         pdf_filename = pdf_fullname.split('.')[0]
         pdf_png_files = glob.glob(pdf_img_path + pdf_filename + '*.png')
+        pdf_png_files.sort()
         with open(output_fullpath, "wb") as f:
             f.write(img2pdf.convert(pdf_png_files))
 
