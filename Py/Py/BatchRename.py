@@ -46,7 +46,7 @@ def compare_pics(from_path, to_path):
                         break
 
             if found == 0:
-                print(COPY_MARK, fr_pic,'need to copy')
+                print(COPY_MARK, fr_pic,'need to be copied')
 
 if __name__ == '__main__':
     compare_dir(FROM_PATH, TO_PATH)
